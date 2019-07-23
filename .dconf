@@ -1,0 +1,315 @@
+[com/ubuntu/update-notifier]
+release-check-time=uint32 1563811366
+
+[apps/psensor]
+interface-window-h=200
+graph-foreground-color='#000000000000'
+interface-window-keep-below-enabled=false
+interface-window-restore-enabled=true
+interface-window-y=153
+graph-background-alpha=1.0
+provider-lmsensors-enabled=true
+slog-interval=300
+interface-hide-on-startup=true
+interface-menu-bar-disabled=false
+notif-script=''
+interface-sensorlist-position=0
+interface-temperature-unit=1
+interface-window-decoration-disabled=false
+graph-update-interval=2
+provider-gtop2-enabled=true
+slog-enabled=false
+graph-monitoring-duration=20
+interface-window-divider-pos=0
+provider-udisks2-enabled=true
+provider-atiadlsdk-enabled=true
+interface-unity-launcher-count-disabled=false
+interface-window-w=800
+provider-hddtemp-enabled=false
+graph-alpha-channel-enabled=false
+provider-libatasmart-enabled=false
+graph-smooth-curves-enabled=true
+graph-background-color='#e8f4e8f4a8f5'
+interface-window-x=487
+provider-nvctrl-enabled=true
+sensor-update-interval=2
+
+[apps/seahorse/windows/key-manager]
+width=600
+height=476
+
+[apps/seahorse/listing]
+sidebar-width=170
+
+[apps/update-manager]
+launch-time=int64 1563811406
+launch-count=2
+first-run=false
+
+[org/freedesktop/tracker/miner/files]
+index-recursive-directories=['&DESKTOP', '&DOCUMENTS', '&DOWNLOAD', '&MUSIC', '&PICTURES', '&VIDEOS']
+
+[org/gtk/settings/file-chooser]
+date-format='regular'
+show-size-column=true
+show-hidden=false
+sidebar-width=170
+sort-column='name'
+window-position=(359, 57)
+sort-order='ascending'
+location-mode='path-bar'
+sort-directories-first=true
+window-size=(1203, 902)
+
+[org/gtk/settings/color-chooser]
+custom-colors=[(1.0, 0.99607843137254903, 0.99607843137254903, 1.0), (0.74509803921568629, 0.80784313725490198, 0.8666666666666667, 1.0)]
+selected-color=(true, 1.0, 0.99607843137254903, 0.99607843137254903, 1.0)
+
+[org/gnome/deja-dup]
+backend='goa'
+prompt-check='2019-07-22T16:05:46.394204Z'
+
+[org/gnome/deja-dup/file]
+migrated=true
+
+[org/gnome/deja-dup/goa]
+type='google'
+
+[org/gnome/system/location]
+enabled=true
+
+[org/gnome/power-manager]
+info-page-number=0
+info-stats-type='discharge-accuracy'
+info-history-type='charge'
+info-last-device='/org/freedesktop/UPower/devices/line_power_ADP1'
+
+[org/gnome/desktop/notifications]
+application-children=['update-manager', 'org-gnome-gedit', 'firefox-firefox', 'org-gnome-software', 'apport-gtk', 'org-gnome-tweaks']
+
+[org/gnome/desktop/notifications/application/org-gnome-tweaks]
+application-id='org.gnome.tweaks.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-software]
+application-id='org.gnome.Software.desktop'
+
+[org/gnome/desktop/notifications/application/apport-gtk]
+application-id='apport-gtk.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-gedit]
+application-id='org.gnome.gedit.desktop'
+
+[org/gnome/desktop/notifications/application/firefox-firefox]
+application-id='firefox_firefox.desktop'
+
+[org/gnome/desktop/notifications/application/update-manager]
+application-id='update-manager.desktop'
+
+[org/gnome/desktop/calendar]
+show-weekdate=false
+
+[org/gnome/desktop/wm/keybindings]
+toggle-maximized=['<Alt>1']
+
+[org/gnome/desktop/wm/preferences]
+focus-mode='click'
+action-middle-click-titlebar='none'
+auto-raise=false
+button-layout=':appmenu,minimize,maximize,close'
+
+[org/gnome/desktop/peripherals/touchpad]
+two-finger-scrolling-enabled=true
+speed=0.80291970802919699
+click-method='fingers'
+
+[org/gnome/desktop/peripherals/mouse]
+speed=0.13138686131386867
+left-handed=false
+
+[org/gnome/desktop/privacy]
+report-technical-problems=true
+recent-files-max-age=7
+remove-old-temp-files=true
+old-files-age=uint32 7
+remove-old-trash-files=true
+
+[org/gnome/desktop/sound]
+theme-name='freedesktop'
+allow-volume-above-100-percent=false
+
+[org/gnome/desktop/datetime]
+automatic-timezone=true
+
+[org/gnome/desktop/interface]
+gtk-enable-primary-paste=false
+clock-show-seconds=true
+enable-animations=false
+gtk-theme='Yaru-dark'
+icon-theme='Yaru'
+cursor-theme='Yaru'
+gtk-im-module='gtk-im-context-simple'
+clock-show-weekday=true
+show-battery-percentage=true
+
+[org/gnome/desktop/app-folders/folders/YaST]
+translate=true
+categories=['X-SuSE-YaST']
+name='suse-yast.directory'
+
+[org/gnome/desktop/app-folders/folders/Utilities]
+translate=true
+categories=['X-GNOME-Utilities']
+name='X-GNOME-Utilities.directory'
+apps=['org.gnome.baobab.desktop', 'deja-dup-preferences.desktop', 'eog.desktop', 'evince.desktop', 'org.gnome.FileRoller.desktop', 'gnome-calculator.desktop', 'gnome-dictionary.desktop', 'org.gnome.Characters.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.font-viewer.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Screenshot.desktop', 'gnome-system-log.desktop', 'gnome-system-monitor.desktop', 'gnome-tweak-tool.desktop', 'gucharmap.desktop', 'seahorse.desktop', 'vinagre.desktop', 'yelp.desktop']
+
+[org/gnome/desktop/app-folders/folders/Sundry]
+translate=true
+categories=['X-GNOME-Sundry']
+name='X-GNOME-Sundry.directory'
+apps=['alacarte.desktop', 'authconfig.desktop', 'ca.desrt.dconf-editor.desktop', 'fedora-release-notes.desktop', 'firewall-config.desktop', 'flash-player-properties.desktop', 'gconf-editor.desktop', 'gnome-abrt.desktop', 'gnome-power-statistics.desktop', 'ibus-setup-anthy.desktop', 'ibus-setup.desktop', 'ibus-setup-hangul.desktop', 'ibus-setup-libbopomofo.desktop', 'ibus-setup-libpinyin.desktop', 'ibus-setup-m17n.desktop', 'ibus-setup-typing-booster.desktop', 'im-chooser.desktop', 'itweb-settings.desktop', 'jhbuild.desktop', 'javaws.desktop', 'java-1.7.0-openjdk-jconsole.desktop', 'java-1.7.0-openjdk-policytool.desktop', 'log4j-chainsaw.desktop', 'log4j-logfactor5.desktop', 'nm-connection-editor.desktop', 'orca.desktop', 'setroubleshoot.desktop', 'system-config-date.desktop', 'system-config-firewall.desktop', 'system-config-keyboard.desktop', 'system-config-language.desktop', 'system-config-printer.desktop', 'system-config-users.desktop', 'vino-preferences.desktop']
+
+[org/gnome/desktop/app-folders]
+folder-children=['Utilities', 'Sundry', 'YaST']
+
+[org/gnome/desktop/search-providers]
+sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
+
+[org/gnome/desktop/input-sources]
+show-all-sources=false
+sources=[('xkb', 'us')]
+xkb-options=@as []
+
+[org/gnome/terminal/legacy]
+new-terminal-mode='tab'
+theme-variant='dark'
+
+[org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+use-custom-command=false
+login-shell=false
+
+[org/gnome/terminal/legacy/profiles:]
+default='2f89536d-0e27-404e-bd6c-bf1fa975b0ed'
+list=['2f89536d-0e27-404e-bd6c-bf1fa975b0ed']
+
+[org/gnome/terminal/legacy/profiles:/:2f89536d-0e27-404e-bd6c-bf1fa975b0ed]
+bold-color='#C5C5C8C8C6C6'
+bold-color-same-as-fg=true
+use-transparent-background=false
+background-color='#1D1D1F1F2121'
+cursor-colors-set=false
+cursor-shape='ibeam'
+use-theme-background=false
+use-theme-colors=false
+font='Ubuntu Mono 12'
+visible-name='Tomorrow Night'
+use-system-font=true
+background-transparency-percent=50
+palette=['rgb(0,0,0)', 'rgb(204,102,102)', 'rgb(181,189,104)', 'rgb(240,198,116)', 'rgb(129,162,190)', 'rgb(178,147,187)', 'rgb(138,190,183)', 'rgb(255,254,254)', 'rgb(0,0,0)', 'rgb(204,102,102)', 'rgb(181,189,104)', 'rgb(240,197,116)', 'rgb(128,161,189)', 'rgb(178,148,186)', 'rgb(138,189,182)', 'rgb(255,254,254)']
+foreground-color='#C5C5C8C8C6C6'
+allow-bold=true
+bold-is-bright=false
+highlight-colors-set=false
+audible-bell=false
+use-theme-transparency=true
+
+[org/gnome/evolution-data-server]
+migrated=true
+network-monitor-gio-name=''
+
+[org/gnome/gedit/plugins/filebrowser]
+tree-view=true
+virtual-root='file:///home/jcp/Desktop'
+root='file:///'
+
+[org/gnome/gedit/plugins]
+active-plugins=['time', 'modelines', 'docinfo', 'spell', 'filebrowser']
+
+[org/gnome/gedit/preferences/ui]
+show-tabs-mode='auto'
+
+[org/gnome/gedit/state/window]
+bottom-panel-size=140
+side-panel-size=200
+side-panel-active-page='GeditWindowDocumentsPanel'
+size=(960, 962)
+state=45824
+
+[org/gnome/software]
+check-timestamp=int64 1563885847
+
+[org/gnome/evolution]
+default-task-list='system-task-list'
+
+[org/gnome/nautilus/icon-view]
+default-zoom-level='small'
+
+[org/gnome/nautilus/window-state]
+start-with-sidebar=true
+initial-size=(960, 962)
+maximized=false
+
+[org/gnome/nautilus/preferences]
+search-view='list-view'
+default-folder-viewer='list-view'
+search-filter-time-type='last_modified'
+show-image-thumbnails='local-only'
+
+[org/gnome/nautilus/list-view]
+use-tree-view=false
+default-visible-columns=['name', 'size', 'date_modified', 'starred']
+default-column-order=['name', 'size', 'type', 'owner', 'group', 'permissions', 'where', 'date_modified', 'date_modified_with_time', 'date_accessed', 'recency', 'starred', 'detailed_type']
+
+[org/gnome/control-center]
+last-panel='wifi'
+
+[org/gnome/mutter/keybindings]
+toggle-tiled-left=['<Alt>2']
+toggle-tiled-right=['<Alt>3']
+
+[org/gnome/mutter]
+center-new-windows=true
+
+[org/gnome/settings-daemon/peripherals/keyboard]
+numlock-state='off'
+
+[org/gnome/settings-daemon/plugins/media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
+command='true'
+name='Disable Keypad Insert'
+binding='KP_Insert'
+
+[org/gnome/settings-daemon/plugins/xsettings]
+overrides={'Gtk/ShellShowsAppMenu': <1>}
+hinting='slight'
+
+[org/gnome/settings-daemon/plugins/power]
+sleep-inactive-battery-type='nothing'
+power-button-action='suspend'
+sleep-inactive-ac-timeout=900
+sleep-inactive-battery-timeout=900
+sleep-inactive-ac-type='nothing'
+
+[org/gnome/shell]
+enable-hot-corners=true
+app-picker-view=uint32 1
+favorite-apps=['org.gnome.Nautilus.desktop', 'google-chrome.desktop', 'org.gnome.Terminal.desktop', 'code_code.desktop', 'typora.desktop', 'slack_slack.desktop']
+enabled-extensions=@as []
+
+[org/gnome/shell/extensions/dash-to-dock]
+dash-max-icon-size=32
+dock-position='BOTTOM'
+dock-fixed=true
+
+[org/gnome/shell/extensions/desktop-icons]
+show-trash=true
+icon-size='small'
+show-home=false
+
+[org/gnome/todo]
+default-provider='local'
+window-size=[1798, 956]
+window-position=[26, 23]
+view='grid'
+window-maximized=false

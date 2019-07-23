@@ -1,0 +1,5 @@
+# Terminal directory shortcuts
+alias d="cd ~/Development"
+
+# Open directory in Visual Studio Code.
+alias c="code ."

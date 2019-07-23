@@ -1,0 +1,7 @@
+[core]
+	excludesfile = /home/jcp/.gitignore_global
+[color]
+	ui = true
+[user]
+	name = James C. Palmer
+	email = palmer.james@gmail.com
