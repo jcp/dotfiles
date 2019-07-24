@@ -55,7 +55,7 @@ show-size-column=true
 show-hidden=false
 sidebar-width=170
 sort-column='name'
-window-position=(359, 57)
+window-position=(0, 57)
 sort-order='ascending'
 location-mode='path-bar'
 sort-directories-first=true
@@ -65,18 +65,47 @@ window-size=(1203, 902)
 custom-colors=[(1.0, 0.99607843137254903, 0.99607843137254903, 1.0), (0.74509803921568629, 0.80784313725490198, 0.8666666666666667, 1.0)]
 selected-color=(true, 1.0, 0.99607843137254903, 0.99607843137254903, 1.0)
 
-[org/gnome/deja-dup]
-backend='goa'
-prompt-check='2019-07-22T16:05:46.394204Z'
+[org/gnome/evolution]
+default-task-list='system-task-list'
 
-[org/gnome/deja-dup/file]
+[org/gnome/nautilus/icon-view]
+default-zoom-level='small'
+
+[org/gnome/nautilus/window-state]
+start-with-sidebar=true
+initial-size=(960, 962)
+maximized=false
+
+[org/gnome/nautilus/preferences]
+search-view='list-view'
+default-folder-viewer='list-view'
+search-filter-time-type='last_modified'
+show-image-thumbnails='local-only'
+
+[org/gnome/nautilus/list-view]
+use-tree-view=false
+default-visible-columns=['name', 'size', 'date_modified', 'starred']
+default-column-order=['name', 'size', 'type', 'owner', 'group', 'permissions', 'where', 'date_modified', 'date_modified_with_time', 'date_accessed', 'recency', 'starred', 'detailed_type']
+
+[org/gnome/evolution-data-server]
 migrated=true
+network-monitor-gio-name=''
 
-[org/gnome/deja-dup/goa]
-type='google'
+[org/gnome/shell]
+enable-hot-corners=true
+app-picker-view=uint32 1
+favorite-apps=['org.gnome.Nautilus.desktop', 'google-chrome.desktop', 'org.gnome.Terminal.desktop', 'code_code.desktop', 'slack_slack.desktop', 'typora.desktop', 'org.gnome.gedit.desktop']
+enabled-extensions=@as []
 
-[org/gnome/system/location]
-enabled=true
+[org/gnome/shell/extensions/dash-to-dock]
+dash-max-icon-size=32
+dock-position='BOTTOM'
+dock-fixed=true
+
+[org/gnome/shell/extensions/desktop-icons]
+show-trash=true
+icon-size='small'
+show-home=false
 
 [org/gnome/power-manager]
 info-page-number=0
@@ -85,22 +114,28 @@ info-history-type='charge'
 info-last-device='/org/freedesktop/UPower/devices/line_power_ADP1'
 
 [org/gnome/desktop/notifications]
-application-children=['update-manager', 'org-gnome-gedit', 'firefox-firefox', 'org-gnome-software', 'apport-gtk', 'org-gnome-tweaks']
+application-children=['update-manager', 'org-gnome-gedit', 'firefox-firefox', 'org-gnome-software', 'apport-gtk', 'org-gnome-tweaks', 'org-gnome-fileroller', 'org-gnome-nautilus']
 
-[org/gnome/desktop/notifications/application/org-gnome-tweaks]
-application-id='org.gnome.tweaks.desktop'
-
-[org/gnome/desktop/notifications/application/org-gnome-software]
-application-id='org.gnome.Software.desktop'
-
-[org/gnome/desktop/notifications/application/apport-gtk]
-application-id='apport-gtk.desktop'
+[org/gnome/desktop/notifications/application/org-gnome-fileroller]
+application-id='org.gnome.FileRoller.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-gedit]
 application-id='org.gnome.gedit.desktop'
 
+[org/gnome/desktop/notifications/application/org-gnome-software]
+application-id='org.gnome.Software.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-nautilus]
+application-id='org.gnome.Nautilus.desktop'
+
+[org/gnome/desktop/notifications/application/apport-gtk]
+application-id='apport-gtk.desktop'
+
 [org/gnome/desktop/notifications/application/firefox-firefox]
 application-id='firefox_firefox.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-tweaks]
+application-id='org.gnome.tweaks.desktop'
 
 [org/gnome/desktop/notifications/application/update-manager]
 application-id='update-manager.desktop'
@@ -179,6 +214,91 @@ show-all-sources=false
 sources=[('xkb', 'us')]
 xkb-options=@as []
 
+[org/gnome/control-center]
+last-panel='applications'
+
+[org/gnome/system/location]
+enabled=true
+
+[org/gnome/settings-daemon/peripherals/keyboard]
+numlock-state='off'
+
+[org/gnome/settings-daemon/plugins/media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
+command='true'
+name='Disable Keypad Insert'
+binding='KP_Insert'
+
+[org/gnome/settings-daemon/plugins/xsettings]
+overrides={'Gtk/ShellShowsAppMenu': <1>}
+hinting='slight'
+
+[org/gnome/settings-daemon/plugins/power]
+sleep-inactive-battery-type='nothing'
+power-button-action='suspend'
+sleep-inactive-ac-timeout=900
+sleep-inactive-battery-timeout=900
+sleep-inactive-ac-type='nothing'
+
+[org/gnome/mutter/keybindings]
+toggle-tiled-left=['<Alt>2']
+toggle-tiled-right=['<Alt>3']
+
+[org/gnome/mutter]
+center-new-windows=true
+
+[org/gnome/deja-dup]
+backend='goa'
+prompt-check='2019-07-22T16:05:46.394204Z'
+
+[org/gnome/deja-dup/file]
+migrated=true
+
+[org/gnome/deja-dup/goa]
+type='google'
+
+[org/gnome/gedit/plugins/filebrowser]
+tree-view=true
+virtual-root='file:///home/jcp/Desktop'
+root='file:///'
+
+[org/gnome/gedit/plugins]
+active-plugins=['time', 'modelines', 'docinfo', 'spell', 'filebrowser']
+
+[org/gnome/gedit/preferences/ui]
+show-tabs-mode='auto'
+
+[org/gnome/gedit/state/window]
+bottom-panel-size=140
+side-panel-size=200
+side-panel-active-page='GeditWindowDocumentsPanel'
+size=(960, 962)
+state=87168
+
+[org/gnome/file-roller/ui]
+sidebar-width=200
+window-width=600
+window-height=480
+
+[org/gnome/file-roller/listing]
+sort-method='name'
+sort-type='ascending'
+list-mode='as-folder'
+name-column-width=250
+show-path=false
+
+[org/gnome/todo]
+default-provider='local'
+window-size=[1798, 956]
+window-position=[26, 23]
+view='grid'
+window-maximized=false
+
+[org/gnome/software]
+check-timestamp=int64 1563973676
+
 [org/gnome/terminal/legacy]
 new-terminal-mode='tab'
 theme-variant='dark'
@@ -211,105 +331,3 @@ bold-is-bright=false
 highlight-colors-set=false
 audible-bell=false
 use-theme-transparency=true
-
-[org/gnome/evolution-data-server]
-migrated=true
-network-monitor-gio-name=''
-
-[org/gnome/gedit/plugins/filebrowser]
-tree-view=true
-virtual-root='file:///home/jcp/Desktop'
-root='file:///'
-
-[org/gnome/gedit/plugins]
-active-plugins=['time', 'modelines', 'docinfo', 'spell', 'filebrowser']
-
-[org/gnome/gedit/preferences/ui]
-show-tabs-mode='auto'
-
-[org/gnome/gedit/state/window]
-bottom-panel-size=140
-side-panel-size=200
-side-panel-active-page='GeditWindowDocumentsPanel'
-size=(960, 962)
-state=45824
-
-[org/gnome/software]
-check-timestamp=int64 1563885847
-
-[org/gnome/evolution]
-default-task-list='system-task-list'
-
-[org/gnome/nautilus/icon-view]
-default-zoom-level='small'
-
-[org/gnome/nautilus/window-state]
-start-with-sidebar=true
-initial-size=(960, 962)
-maximized=false
-
-[org/gnome/nautilus/preferences]
-search-view='list-view'
-default-folder-viewer='list-view'
-search-filter-time-type='last_modified'
-show-image-thumbnails='local-only'
-
-[org/gnome/nautilus/list-view]
-use-tree-view=false
-default-visible-columns=['name', 'size', 'date_modified', 'starred']
-default-column-order=['name', 'size', 'type', 'owner', 'group', 'permissions', 'where', 'date_modified', 'date_modified_with_time', 'date_accessed', 'recency', 'starred', 'detailed_type']
-
-[org/gnome/control-center]
-last-panel='wifi'
-
-[org/gnome/mutter/keybindings]
-toggle-tiled-left=['<Alt>2']
-toggle-tiled-right=['<Alt>3']
-
-[org/gnome/mutter]
-center-new-windows=true
-
-[org/gnome/settings-daemon/peripherals/keyboard]
-numlock-state='off'
-
-[org/gnome/settings-daemon/plugins/media-keys]
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
-
-[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
-command='true'
-name='Disable Keypad Insert'
-binding='KP_Insert'
-
-[org/gnome/settings-daemon/plugins/xsettings]
-overrides={'Gtk/ShellShowsAppMenu': <1>}
-hinting='slight'
-
-[org/gnome/settings-daemon/plugins/power]
-sleep-inactive-battery-type='nothing'
-power-button-action='suspend'
-sleep-inactive-ac-timeout=900
-sleep-inactive-battery-timeout=900
-sleep-inactive-ac-type='nothing'
-
-[org/gnome/shell]
-enable-hot-corners=true
-app-picker-view=uint32 1
-favorite-apps=['org.gnome.Nautilus.desktop', 'google-chrome.desktop', 'org.gnome.Terminal.desktop', 'code_code.desktop', 'typora.desktop', 'slack_slack.desktop']
-enabled-extensions=@as []
-
-[org/gnome/shell/extensions/dash-to-dock]
-dash-max-icon-size=32
-dock-position='BOTTOM'
-dock-fixed=true
-
-[org/gnome/shell/extensions/desktop-icons]
-show-trash=true
-icon-size='small'
-show-home=false
-
-[org/gnome/todo]
-default-provider='local'
-window-size=[1798, 956]
-window-position=[26, 23]
-view='grid'
-window-maximized=false
