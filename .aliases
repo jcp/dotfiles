@@ -2,7 +2,7 @@
 alias d="cd ~/Development"
 
 # Open a directory
-alias open="nautilus ."
+alias open="xdg-open"
 
 # Open directory in Visual Studio Code.
 alias c="code ."
