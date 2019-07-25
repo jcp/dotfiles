@@ -1,5 +1,8 @@
 # Terminal directory shortcuts
 alias d="cd ~/Development"
 
+# Open a directory
+alias open="nautilus ."
+
 # Open directory in Visual Studio Code.
 alias c="code ."
