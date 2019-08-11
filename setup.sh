@@ -29,11 +29,12 @@ create_dotfile() {
 
 # Execute `create_dotfile`
 echo -e "\e[34mCreating dotfiles...\e[0m"
-create_dotfile ".gitconfig"
-create_dotfile ".gitignore_global"
 create_dotfile ".aliases"
 create_dotfile ".editorconfig"
 create_dotfile ".exports"
+create_dotfile ".gitconfig"
+create_dotfile ".gitignore_global"
+create_dotfile ".p10k.zsh"
 create_dotfile ".zshrc"
 
 echo -e "\e[34mCleaning up unecessary dotfiles...\e[0m"
