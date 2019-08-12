@@ -10,3 +10,7 @@ alias c="code ."
 # Override ls with exa
 alias l="exa -alh --group-directories-first --classify"
 alias ls="exa -alh --group-directories-first --classify"
+
+# Tilix sessions
+alias down="tilix -a session-add-down"
+alias right="tilix -a session-add-right"
