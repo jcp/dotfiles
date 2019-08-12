@@ -6,3 +6,7 @@ alias open="xdg-open"
 
 # Open directory in Visual Studio Code.
 alias c="code ."
+
+# Override ls with exa
+alias l="exa -alh --group-directories-first --classify"
+alias ls="exa -alh --group-directories-first --classify"
