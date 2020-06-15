@@ -27,3 +27,7 @@ Reload ZSH.
 ```bash
 $ source ~/.zshrc
 ```
+
+> **Note**
+> 
+> [ZSH and Oh My ZSH](https://github.com/jcp/installation-guides/blob/master/README.md#zsh-and-oh-my-zsh) must be installed.
