@@ -4,7 +4,7 @@ Download dotfiles directory.
 
 ```bash
 $ cd ~
-$ git clone git@github.com:jcp/dotfiles.git
+$ git clone https://github.com/jcp/dotfiles.git
 ```
 
 Execute **setup.sh**.
