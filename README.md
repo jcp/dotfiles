@@ -3,29 +3,29 @@
 Download dotfiles directory.
 
 ```bash
-$ cd ~
-$ git clone https://github.com/jcp/dotfiles.git
+cd ~
+git clone https://github.com/jcp/dotfiles.git
 ```
 
 Execute `install.sh`.
 
 ```bash
-$ cd dotfiles
-$ chmod +x install.sh
-$ ./install.sh
+cd dotfiles
+chmod +x install.sh
+./install.sh
 ```
 
 Cleanup and remove dotfiles directory.
 
 ```bash
-$ cd ..
-$ rm -rf dotfiles
+cd ..
+rm -rf dotfiles
 ```
 
 Reload Zsh.
 
 ```bash
-$ source ~/.zshrc
+source ~/.zshrc
 ```
 
 > **Note**
