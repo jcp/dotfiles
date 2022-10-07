@@ -1,16 +1,14 @@
-# Terminal directory shortcuts
+# directories
 alias d="cd ~/Development"
+alias doc="cd ~/Documents"
 
-# Open a directory
-alias open="xdg-open"
-
-# Open directory in Visual Studio Code.
-alias c="code ."
-
-# Override ls with exa
-alias l="exa -alh --group-directories-first --classify"
+# exa
 alias ls="exa -alh --group-directories-first --classify"
+alias l="l"
 
-# Tilix sessions
+# tilix
 alias down="tilix -a session-add-down"
 alias right="tilix -a session-add-right"
+
+# xclip
+alias copy="xclip"

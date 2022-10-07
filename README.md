@@ -7,12 +7,12 @@ $ cd ~
 $ git clone https://github.com/jcp/dotfiles.git
 ```
 
-Execute **setup.sh**.
+Execute `install.sh`.
 
 ```bash
 $ cd dotfiles
-$ chmod +x setup.sh
-$ ./setup.sh
+$ chmod +x install.sh
+$ ./install.sh
 ```
 
 Cleanup and remove dotfiles directory.
@@ -22,7 +22,7 @@ $ cd ..
 $ rm -rf dotfiles
 ```
 
-Reload ZSH.
+Reload Zsh.
 
 ```bash
 $ source ~/.zshrc
@@ -30,4 +30,4 @@ $ source ~/.zshrc
 
 > **Note**
 > 
-> [ZSH and Oh My ZSH](https://github.com/jcp/installation-guides/blob/master/README.md#zsh-and-oh-my-zsh) must be installed.
+> [Zsh and Oh My Zsh](https://github.com/jcp/installation-guides#terminal) must be installed.

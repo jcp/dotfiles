@@ -11,6 +11,11 @@ node_modules/
 npm-debug.log*
 
 
+# Editors
+# -------
+.obsidian
+
+
 # Apache
 # ------
 .htaccess
@@ -28,10 +33,11 @@ __pycache__/
 # ---------
 wp-config.php
 
-# ignore everything in the root except the "wp-content" directory.
+# ignore everything in the root directory except the
+# "wp-content" directory.
 !wp-content/
 
-# ignore everything in the "wp-content" directory, except:
+# ignore everything in the "wp-content" directory, except
 # "mu-plugins", "plugins", "themes" directory
 wp-content/*
 !wp-content/mu-plugins/

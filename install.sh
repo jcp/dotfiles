@@ -1,14 +1,6 @@
-#!/bin/bash
-#
-# Installs dotfiles
+#!/usr/bin/env bash
 
-# ----
-# Moves dotfile after user prompt
-# Arguments:
-#   filename: Dotfile filename
-# Returns:
-#   None
-# ----
+# Create dotfile
 create_dotfile() {
   dotfile="${1}"
   new_file="$HOME/${1}"
@@ -16,6 +8,7 @@ create_dotfile() {
   if [[ -L $new_file || -f $new_file ]]; then
     echo -e "\e[31m${new_file} exists. Do you want to overwrite this file (y/n)? \e[0m"
     read response
+
     if [ "${response,,}" = "y" ]; then
       rm $new_file
     else
@@ -53,6 +46,7 @@ fi
 # Load dconf settings
 echo -e "\e[31mDo you want to load dconf settings (y/n)? \e[0m"
 read response
+
 if [ "${response,,}" = "y" ]; then
   dconf load / < .dconf
 else
