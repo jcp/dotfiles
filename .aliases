@@ -1,4 +1,5 @@
 # directories
+alias c="code ."
 alias dev="cd ~/Development"
 alias d="dev"
 alias dl="cd ~/Downloads"
