@@ -1,57 +1,58 @@
 #!/usr/bin/env bash
 
-# Create dotfile
-create_dotfile() {
-  dotfile="${1}"
-  new_file="$HOME/${1}"
+# Create symlink
+create_symlink() {
+  dotfile="$(pwd)/${1}"
+  symlink="$HOME/${1}"
 
-  if [[ -L $new_file || -f $new_file ]]; then
-    echo -e "\e[31m${new_file} exists. Do you want to overwrite this file (y/n)? \e[0m"
+  if [[ -L $symlink || -f $symlink ]]; then
+    printf "File \"${symlink}\" exists. Do you want to overwrite this file (y/n)? "
     read response
 
-    if [ "${response,,}" = "y" ]; then
-      rm $new_file
+    if [[ "${response,,}" = "y" ]]; then
+      rm $symlink
     else
-      echo -e "\e[34mSkipping: ${new_file}\e[0m"
       return 1
     fi
   fi
 
-  cp "${dotfile}" ${new_file}
+  ln -s $dotfile $symlink
 }
 
-# Execute `create_dotfile`
-echo -e "\e[34mCreating dotfiles...\e[0m"
-create_dotfile ".aliases"
-create_dotfile ".editorconfig"
-create_dotfile ".exports"
-create_dotfile ".gitconfig"
-create_dotfile ".gitignore_global"
-create_dotfile ".p10k.zsh"
-create_dotfile ".zshrc"
+# Execute `create_symlink`
+printf "\n\e[34mCreating dotfile symlinks...\e[0m\n"
+create_symlink ".aliases"
+create_symlink ".editorconfig"
+create_symlink ".exports"
+create_symlink ".gitconfig"
+create_symlink ".gitignore_global"
+create_symlink ".p10k.zsh"
+create_symlink ".zshrc"
 
-echo -e "\e[34mCleaning up unecessary dotfiles...\e[0m"
-if [ -f "$HOME/.bash_profile" ]; then
-  rm "$HOME/.bash_profile"
-fi
-
-if [ -f "$HOME/.bashrc" ]; then
-  rm "$HOME/.bashrc"
-fi
-
-if [ -f "$HOME/.profile" ]; then
-  rm "$HOME/.profile"
-fi
+printf "\n\e[34mRemoving unecessary dotfiles...\e[0m\n\n"
+rm -f "$HOME/.bash_profile"
+rm -f "$HOME/.bashrc"
+rm -f "$HOME/.profile"
 
 # Load dconf settings
-echo -e "\e[31mDo you want to load dconf settings (y/n)? \e[0m"
+printf "Do you want to load dconf settings (y/n)? "
 read response
 
-if [ "${response,,}" = "y" ]; then
+if [[ "${response,,}" = "y" ]]; then
   dconf load / < .dconf
-else
-  echo -e "\e[34mSkipping dconf setup\e[0m"
 fi
 
-# Setup complete
-echo -e "\e[32mInstallation complete. Remove dotfiles directory...\e[0m"
+# Load .zshrc
+printf "Do you want to load .zshrc settings (y/n)? "
+read response
+
+if [[ "${response,,}" = "y" ]]; then
+  if [[ -f "/usr/bin/zsh" ]]; then
+    /usr/bin/zsh $HOME/.zshrc
+  else
+    printf "\e[31m/usr/bin/zsh not found. Skipping...\e[0m\n"
+  fi
+fi
+
+# Installation complete
+printf "\n\e[32mInstallation complete \U1F973\n\e[0m"

@@ -1,9 +1,9 @@
 # Installation
 
-Download dotfiles directory.
+Download dotfiles repository.
 
 ```bash
-cd ~
+cd ~/.config
 git clone https://github.com/jcp/dotfiles.git
 ```
 
@@ -15,19 +15,6 @@ chmod +x install.sh
 ./install.sh
 ```
 
-Cleanup and remove dotfiles directory.
-
-```bash
-cd ..
-rm -rf dotfiles
-```
-
-Reload Zsh.
-
-```bash
-source ~/.zshrc
-```
-
 > **Note**
-> 
+>
 > [Zsh and Oh My Zsh](https://github.com/jcp/installation-guides#terminal) must be installed.

@@ -1,7 +1,8 @@
-# Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+# Oh My Zsh
+# ---------
+export ZSH="${HOME}/.oh-my-zsh"
 
-# Set theme
+# Set Zsh theme
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Enable case insensitivity
@@ -28,19 +29,18 @@ plugins=(
 )
 
 # Load Oh My Zsh
-. $ZSH/oh-my-zsh.sh
+source $ZSH/oh-my-zsh.sh
 
-# Powerlevel 10k settings
-if [ -f ~/.p10k.zsh ]; then
-    . ~/.p10k.zsh
-fi
 
-# Aliases
-if [ -f ~/.aliases ]; then
-    . ~/.aliases
-fi
+# Dotfiles
+# --------
+function load_dotfile() {
+    if [[ -f "$(pwd)/${1}" ]]; then
+        source "$(pwd)/${1}"
+    fi
+}
 
-# Exports
-if [ -f ~/.exports ]; then
-    . ~/.exports
-fi
+# Load dotfiles
+load_dotfile ".p10k.zsh"
+load_dotfile ".aliases"
+load_dotfile ".exports"
