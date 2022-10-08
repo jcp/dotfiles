@@ -5,6 +5,7 @@ alias d="dev"
 alias dl="cd ~/Downloads"
 alias doc="cd ~/Documents"
 alias dotfiles="cd ~/.config/dotfiles"
+alias guides="cd ~/Development/guides"
 
 # exa
 alias ls="exa -alh --group-directories-first --classify"
