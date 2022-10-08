@@ -22,10 +22,10 @@ zstyle ':omz:update' frequency 7
 
 # Enable custom plugins in $ZSH_CUSTOM/plugins/
 plugins=(
-    git
-    colorize
-    zsh-autosuggestions
-    zsh-syntax-highlighting
+  git
+  colorize
+  zsh-autosuggestions
+  zsh-syntax-highlighting
 )
 
 # Load Oh My Zsh
@@ -35,9 +35,11 @@ source $ZSH/oh-my-zsh.sh
 # Dotfiles
 # --------
 function load_dotfile() {
-    if [[ -f "$(pwd)/${1}" ]]; then
-        source "$(pwd)/${1}"
-    fi
+  DOTFILES="${HOME}/.config/dotfiles"
+
+  if [[ -f "${DOTFILES}/${1}" ]]; then
+    source "${DOTFILES}/${1}"
+  fi
 }
 
 # Load dotfiles

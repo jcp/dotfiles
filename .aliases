@@ -1,6 +1,9 @@
 # directories
-alias d="cd ~/Development"
+alias dev="cd ~/Development"
+alias d="dev"
+alias dl="cd ~/Downloads"
 alias doc="cd ~/Documents"
+alias dotfiles="cd ~/.config/dotfiles"
 
 # exa
 alias ls="exa -alh --group-directories-first --classify"

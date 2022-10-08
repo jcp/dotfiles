@@ -2,14 +2,14 @@
 
 Download dotfiles repository.
 
-```bash
+```shell
 cd ~/.config
 git clone https://github.com/jcp/dotfiles.git
 ```
 
 Execute `install.sh`.
 
-```bash
+```shell
 cd dotfiles
 chmod +x install.sh
 ./install.sh
