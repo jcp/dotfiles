@@ -31,11 +31,10 @@ plugins=(
 # Load Oh My Zsh
 source $ZSH/oh-my-zsh.sh
 
-
 # Dotfiles
 # --------
 function load_dotfile() {
-  DOTFILES="${HOME}/.config/dotfiles"
+  DOTFILES="${HOME}/.config/dotfiles/src"
 
   if [[ -f "${DOTFILES}/${1}" ]]; then
     source "${DOTFILES}/${1}"
