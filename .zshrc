@@ -34,7 +34,7 @@ source $ZSH/oh-my-zsh.sh
 # Dotfiles
 # --------
 function load_dotfile() {
-  DOTFILES="${HOME}/.config/dotfiles/src"
+  DOTFILES="${HOME}/.config/dotfiles"
 
   if [[ -f "${DOTFILES}/${1}" ]]; then
     source "${DOTFILES}/${1}"
